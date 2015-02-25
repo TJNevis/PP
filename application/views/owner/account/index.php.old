@@ -1,0 +1,26 @@
+<div class="owner_pet_wrapper">
+	<h2 class="page-title">My Account</h2>
+	<div class="owner_form">
+		<form method="post" id="account_edit" name="account_edit" action="" enctype="multipart/form-data">
+			<fieldset>
+				<h3>Your Information</h3>
+				<ol>
+					<li class="owner_form_helper"><span>Below is the account information we have on record. Currently this infomation cannot be changed though this page. If this information is incorrect please contact us.</span></li>
+					<li><label for="account_name">Name: </label><span><?php echo $account['firstName']." ".$account['lastName']?></li>
+					<?php 
+					$excludePrefs = array('salutation','calendarEmail');
+					
+					foreach($account['prefs'] as $key=>$val) { 
+						if(!in_array($key,$excludePrefs)) {
+							?>
+							<li><label for="<?php echo $key?>"><?php echo $val['name']?>: </label><span><?php echo $val['value']?></li>	
+						<?php 	
+						} 
+					}
+					?>
+					<li class="owner_form_helper"><span><strong>Looking for online payment?</strong> Go to My Pets of the left, then click your pet's passage. On your pet information page click Make a Payment.</span></li>
+				</ol>
+			</fieldset>	
+		</form>
+	</div>
+</div>

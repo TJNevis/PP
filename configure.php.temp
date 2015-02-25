@@ -1,0 +1,6 @@
+<?php 
+$databaseName = "petpassages";
+$databaseUser = "ppcontentuser";
+$databasePassword = "p3tspassag3s2012";
+
+?>

@@ -1,0 +1,988 @@
+body { margin:0 auto; background:#d4e7fa; font:14px/1.55 'Open Sans', Helvetica, sans-serif; color:#000; }
+#container { width:950px; margin:0 auto; }
+
+h2 { color:#5779a8; font-style:italic; }
+h3 { margin:20px 0 5px; } 
+a { font-weight:bold; color:#696; }
+.clear { clear:both; }
+img { border:0; }
+
+span.error { display:block; color:red; font-weight:bold;background-color: #FFBABA;
+border: 1px solid;
+margin: 10px 0px;
+padding:10px; 
+}
+
+/* HEADER  */
+#top { padding: 0 5px; background:#256AA5; overflow:hidden; }
+#top ul { list-style:none; padding:0; margin:0; overflow:hidden; text-align:right; display:block; float:right; }
+#top ul li { color:#fff;font-size:12px; font-weight:bold; line-height:33px; display:block; float:left; padding: 0 5px 0 0; }
+#top ul li a { color:#fff; }
+#top ul li a:hover { text-decoration:none; }
+
+#header { background: #fff; /* height:279px; width:950px; position:relative; */ text-align: right; }
+.header_text { text-decoration:none;display:block; width:250px; padding: 100px 0 0 20px; font-size:25px; color:#000; }
+.header_logo { display:block; width:250px; position:absolute; top:25px; left:20px; }
+.header_banner img { width:950px; }
+.header_banner { /* height:279px; width:950px; overflow:hidden; display:block; */ }
+.header_banner_stock { height:279px; width:950px; overflow:hidden; display:block;  }
+.header_banner_stock_logo { display:block; width:250px; height:279px; position:absolute; top:0; left:20px; z-index:20; }
+.header_banner_stock_logo img { width:250px; height:279px; }
+
+.header_slideshow { height:279px; width:950px; position:absolute; z-index:10;  }
+
+#nav { overflow:hidden; font-size:13px; background:#62861d url(/site-images/nav-bg.jpg) repeat-x 0 0; height: 40px; text-align: center; }
+#nav ul { list-style:none; margin:0; padding:0; float: none; display: inline-block; }
+#nav li { background: transparent url(/site-images/nav-separator.jpg) no-repeat 100% 0; float:left; display:block; }
+#nav li a { color:#fff; text-decoration:none; padding:0 13px; font-weight:bold; display:block; line-height:40px; margin:0 2px 0 0; }
+#nav li.commerce-link a { 
+	line-height:15px; 
+	text-align:center; 
+	padding: 5px 13px 0; 
+	height:40px; 
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+}
+#nav li a:hover { background:#62861d; }
+
+.main-nav { float:left; }
+.social-nav { float:right; list-style:none; margin:0 12px 0 0 !important; padding:0; height:40px; overflow:hidden; }
+.social-nav li { background: none !important; float:right; display:block; }
+.social-nav li a { color:#fff; text-decoration:none; padding:0 0 !important; font-weight:bold; display:block; line-height:auto !important;  }
+.social-nav li a:hover { background:none !important; }
+
+#breadcrumbs { padding:0 0 15px; }
+
+/* CONTENT  */
+#content { background:#fff;padding:20px; }
+h2.page-title { font-size:28px; background:#fff url(/site-images/title-decoration.jpg) no-repeat 0 40px; background-position: 0 40px !important;  display:block; height:75px; }
+
+.pawprint_center { width:100%; height:29px; background:#fff url(/images/templates/1/pawprint.jpg) no-repeat 50% 0; display:block; }
+
+.service-pricing th { text-align:left; border-bottom:1px solid #eee; padding:10px 0;}
+.service-pricing td { padding:5px 0; border-bottom:1px solid #eee; }
+
+/* BUTTON ICONS */
+.icon_print span { background: transparent url(/site-images/print_icon.png) no-repeat 0 50%; display:block; padding: 0 0 0 23px; }
+.icon_add span { background: transparent url(/site-images/plus_icon.png) no-repeat 0 50%; display:block; padding: 0 0 0 23px; }
+.icon_next span { background: transparent url(/site-images/chevron.png) no-repeat 100% 50%; display:block; padding: 0 20px 0 0;} 
+
+
+/* NEW PET TALES */
+.pet_tale_container { overflow:hidden; padding:10px 5px; }
+.pet_tale_left_column { 
+	border-radius: 6px; 
+	-moz-border-radius: 6px; 
+	-webkit-border-radius: 6px; 
+	width:228px; 
+	margin:0 35px 0 0;
+	float:left; 
+	border:1px solid #b8e0fa; 
+	overflow:hidden; 
+	background:#fafafa;
+	color:#2e5789;
+	}
+	.pet_tale_image img { 
+		width:228px;
+		border-bottom: 1px solid #e7e7e7; 
+	}
+	
+	.pet_tale_left_column h3  {
+		margin: 10px 0 0 22px; font-size:14px; font-weight:bold;
+	}
+	
+	ul.pet_tale_social {
+		padding:10px 0 20px 22px; list-style:none; overflow:hidden; margin:0;
+		border-bottom:1px solid #e7e7e7;
+		}
+		ul.pet_tale_social li {
+			display:block; width:34px; height:34px; float:left; margin: 0 15px 0 0; 
+			}
+			ul.pet_tale_social li a {
+				display:block; width:34px; height:34px; overflow:hidden; text-indent:-1000px;				
+			}
+			ul.pet_tale_social li a.pet_tale_facebook { background:transparent url(/site-images/tale_social_buttons_gray.jpg) no-repeat 0 -35px; }
+			ul.pet_tale_social li a.pet_tale_facebook:hover { background:transparent url(/site-images/tale_social_buttons_gray.jpg) no-repeat 0 0; }
+			ul.pet_tale_social li a.pet_tale_twitter { background:transparent url(/site-images/tale_social_buttons_gray.jpg) no-repeat -49px -35px; }
+			ul.pet_tale_social li a.pet_tale_twitter:hover { background:transparent url(/site-images/tale_social_buttons_gray.jpg) no-repeat -49px 0; }
+			ul.pet_tale_social li a.pet_tale_google { background:transparent url(/site-images/tale_social_buttons_gray.jpg) no-repeat -100px -35px; }
+			ul.pet_tale_social li a.pet_tale_google:hover { background:transparent url(/site-images/tale_social_buttons_gray.jpg) no-repeat -100px 0; }
+			ul.pet_tale_social li a.pet_tale_email { background:transparent url(/site-images/tale_social_buttons_gray.jpg) no-repeat -149px -35px; }
+			ul.pet_tale_social li a.pet_tale_email:hover { background:transparent url(/site-images/tale_social_buttons_gray.jpg) no-repeat -149px 0; }
+
+	/* END ul.pet_tale_social */
+	
+	.pet_tale_left_buttons { padding:20px 20px 10px; }
+	.pet_tale_left_buttons a { margin:0 0 10px; }
+/* END .pet_tale_left_column */
+
+.pet_tale_button { 
+	border-radius: 6px; 
+	-moz-border-radius: 6px; 
+	-webkit-border-radius: 6px;
+	display:block;
+	line-height:37px;
+	font-weight:bold; 
+	font-size:14px;
+	text-decoration:none;
+	
+	padding:0 12px
+	}
+	
+	.pet_tale_button span {
+		display:block;
+		padding:0 0 0 25px;
+	} 
+
+	.pet_tale_button_light { 
+		background: #fdfdfd; /* Old browsers */
+		background: -moz-linear-gradient(top, #fdfdfd 0%, #f5f5f5 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fdfdfd), color-stop(100%,#f5f5f5)); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top, #fdfdfd 0%,#f5f5f5 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top, #fdfdfd 0%,#f5f5f5 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top, #fdfdfd 0%,#f5f5f5 100%); /* IE10+ */
+		background: linear-gradient(to bottom, #fdfdfd 0%,#f5f5f5 100%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fdfdfd', endColorstr='#f5f5f5',GradientType=0 ); /* IE6-9 */
+		color:#2e5789;
+		border:1px solid #d6d6d6;
+		-webkit-box-shadow: inset 0px 1px 0px 0px #fff;
+		box-shadow: inset 0px 1px 0px 0px #ffff;
+		}
+		.pet_tale_button_light:hover { background: #fff; } 
+
+	.pet_tale_button_dark { 
+		background: #4c77a8; /* Old browsers */
+		background: -moz-linear-gradient(top, #4c77a8 0%, #406a99 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#4c77a8), color-stop(100%,#406a99)); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top, #4c77a8 0%,#406a99 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top, #4c77a8 0%,#406a99 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top, #4c77a8 0%,#406a99 100%); /* IE10+ */
+		background: linear-gradient(to bottom, #4c77a8 0%,#406a99 100%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c77a8', endColorstr='#406a99',GradientType=0 ); /* IE6-9 */
+		border:1px solid #2e5789;
+		-webkit-box-shadow: inset 0px 1px 0px 0px #5a8db8;
+		box-shadow: inset 0px 1px 0px 0px #5a8db8;
+		color:#fff !important;
+		}
+		.pet_tale_button_dark:hover { background: #406a99; } 
+
+	.pet_tale_print span { background:transparent url(/site-images/tale_icons.png) no-repeat 0 -20px; }
+	.pet_tale_next span { background:transparent url(/site-images/tale_icons.png) no-repeat 100% 11px; padding:0 25px 0 0;}
+	.pet_tale_previous span { background:transparent url(/site-images/tale_icons.png) no-repeat 100% 11px; padding:0 25px 0 0;}
+	.pet_tale_search span { background:transparent url(/site-images/tale_icons.png) no-repeat 0 -52px; }
+	.pet_tale_paw span { background:transparent url(/site-images/tale_icons.png) no-repeat 0 -82px; }
+	.pet_tale_audio span { background:transparent url(/site-images/tale_icons.png) no-repeat 0 -114px; }
+	.pet_tale_mute span { background:transparent url(/site-images/tale_icons.png) no-repeat 0 -144px; }
+	.pet_tale_button_noicon span { padding:0; }
+	
+.pet_tale_right_column { width:630px; float:left; position:relative; }
+	.pet_tale_title { background:#fff url(/site-images/title-decoration.jpg) no-repeat 0 60px; height:110px; }
+	.pet_tale_title h2 { font-size:28px; display:block; margin:0; padding:0; line-height:35px; }
+	.pet_tale_title p { margin:0; padding:0; }
+	.pet_tale_top_buttons { position:absolute; top:35px; right:0; }
+
+.pet_tale_title h2 { font-size:28px; }
+.pet_tale_birthday { font-weight:bold; color:#5779a8; margin:0; }
+
+.pet_tale_tabs { }
+	.pet_tale_tabs ul.pet_tale_tabs_list { height:52px; list-style:none; overflow:hidden; background:transparent url(/site-images/tale_tab_bg.jpg) no-repeat 0 0; margin:0; padding:0; display:block; }
+	.pet_tale_tabs ul.pet_tale_tabs_list li { display:block; float:left; height:60px; }
+	
+	.pet_tale_tabs ul.pet_tale_tabs_list li a { 
+		display:block;
+		float:left;
+		line-height:60px; 
+		color:#fff; 
+		padding:1px 15px 0; 
+		font-size:15px; 
+		font-weight:bold; 
+		text-decoration:none; 
+		background: none; /* Old browsers */
+		border-radius: 6px 6px 0 0;
+		-moz-border-radius: 6px 6px 0 0; 
+		-webkit-border-radius: 6px 6px 0 0;	
+	}
+	.pet_tale_tabs ul.pet_tale_tabs_list li a:hover { 
+		background: none;
+		border:1px solid #305c8f;
+		background: #4c77a8; /* Old browsers */
+		background: -moz-linear-gradient(top, #4c77a8 0%, #406a99 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#4c77a8), color-stop(100%,#406a99)); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top, #4c77a8 0%,#406a99 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top, #4c77a8 0%,#406a99 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top, #4c77a8 0%,#406a99 100%); /* IE10+ */
+		background: linear-gradient(to bottom, #4c77a8 0%,#406a99 100%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c77a8', endColorstr='#406a99',GradientType=0 ); /* IE6-9 */
+		-webkit-box-shadow: inset 0px 1px 0px 0px #5a8db8;
+		box-shadow: inset 0px 1px 0px 0px #5a8db8;
+		padding:0 14px;
+	}
+	.pet_tale_tabs ul.pet_tale_tabs_list li a.pt_tab_active, .pet_tale_tabs ul li a.pt_tab_active:hover { 
+		background: #fff !important;
+		-webkit-box-shadow: none;
+		box-shadow: none;
+		filter:none;
+		border:1px solid #305c8f;
+		color:#305c8f;
+		padding:0 14px; 
+	}
+
+	.pt_tab_content { background:#fff; border:1px solid #b8e0fa; border-width:0px 1px 1px 1px; padding:20px; }
+	.pt_tab_content p { margin:0; color:black; }
+	
+	.pt_tab_message_content { 
+		background:#fff; 
+		border:1px solid #b8e0fa; 
+		border-width:0px 1px 1px 1px; 
+		padding:0 !important;
+		}
+		.pet_tale_message_form {
+			overflow:hidden;
+			position:relative;
+			}
+			.pet_tale_message_form form { overflow:hidden; display:block; }
+			.pet_tale_message_form textarea {
+				width:100%;
+				-webkit-box-sizing: border-box;
+		       	-moz-box-sizing: border-box;
+		       	box-sizing: border-box;
+		       	font-family: 'Lucida Grande';
+		       	font-size:14px;
+		    	margin: 0 0 10px 0;  	
+		   
+			}
+			
+			.pet_tale_message_form input {
+				width:150px; 
+				display:block; 
+				float:left;
+				line-height:22px;
+				margin: 0 5px 0 0;
+			}
+			
+			.pet_tale_message_form a.pet_tale_button_dark {
+				width:110px;
+				float:right;
+				text-align:center;
+				margin:3px 0 0 0;
+				color:#305c8f;
+			}
+			
+			
+			
+			
+		.pet_tale_message_fields { 
+			overflow:hidden; 
+			padding:20px; 
+			background: #eef8ff; /* Old browsers */
+			background: -moz-linear-gradient(top, #ffffff 0%, #eef8ff 100%); /* FF3.6+ */
+			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#eef8ff)); /* Chrome,Safari4+ */
+			background: -webkit-linear-gradient(top, #ffffff 0%,#eef8ff 100%); /* Chrome10+,Safari5.1+ */
+			background: -o-linear-gradient(top, #ffffff 0%,#eef8ff 100%); /* Opera 11.10+ */
+			background: -ms-linear-gradient(top, #ffffff 0%,#eef8ff 100%); /* IE10+ */
+			background: linear-gradient(to bottom, #ffffff 0%,#eef8ff 100%); /* W3C */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#eef8ff',GradientType=0 ); /* IE6-9 */
+			border-bottom:1px solid #b8e0fa;
+		 }
+		 
+		ul.pet_tale_gift_chooser { z-index:1; list-style:none; position:relative; margin:0; padding: 0 20px; height:50px; display:block;  border-bottom:1px solid #b8e0fa; background:#eef8ff; }
+		ul.pet_tale_gift_chooser li { display:block; float:left; position:absolute; bottom:-1px; }
+		
+		ul.pet_tale_gift_chooser li a { 
+			display:inline-block;
+			*display:inline;
+			zoom:1;
+			line-height:40px;
+			padding:0 14px 5px;
+			color:#2e5789;
+			font-size:15px; 
+			font-weight:bold; 
+			text-decoration:none; 
+			background: none; /* Old browsers */
+			border-radius: 6px 6px 0 0;
+			-moz-border-radius: 6px 6px 0 0; 
+			-webkit-border-radius: 6px 6px 0 0;	
+			border:1px solid #eef8ff;
+			border-width:1px 1px 0 !important;
+			z-index:2;
+		}
+		ul.pet_tale_gift_chooser li a:hover { 
+			text-decoration:underline;
+		}
+		ul.pet_tale_gift_chooser li a.active, .ul.pet_tale_gift_chooser li a.active:hover { 
+			background: #fff !important;
+			border:1px solid #b8e0fa;
+			
+			 
+		}
+		
+		.pet_tale_gifts { overflow:hidden; display:none; background:#fff; border-bottom:1px solid #b8e0fa;  }
+		.pet_tale_gifts ul { overflow:hidden; list-style:none; margin:20px 0; padding:0; height:190px;  } 
+		.pet_tale_gifts ul li { 
+			width:110px; 
+			text-align:center;
+			height:182px; 
+			display:block; 
+			float:left; 
+			position:relative;
+			margin:0 22px;
+		 }
+		 
+		 .pet_tale_gifts ul li a { 
+		 	display:block;
+			border-radius: 6px; 
+			-moz-border-radius: 6px; 
+			-webkit-border-radius: 6px;
+			background:#fff;
+			border:1px solid #fff;
+			height:180px;
+			vertical-align:bottom;
+		 }
+		 
+		 .pet_tale_gifts ul li a:hover, .pet_tale_gifts ul li a.selected { 
+			border:1px solid #b8e0fa;
+		 }
+		 
+		 .pet_tale_gift_next, .pet_tale_gift_prev { margin:0 20px 20px; }
+		 .pet_tale_gift_next { text-align:left; float:right; }
+		 .pet_tale_gift_cancel { text-align:left; float:right; position:absolute;right:100px; }
+		 .pet_tale_gift_prev { text-align:right; float:left; }
+			
+		.pet_tale_messages { padding:20px 20px 5px 20px; 
+			background: #fff url(/site-images/tale_stripe.jpg) repeat-y 0 0;
+			}
+			.pet_tale_messages ul { 
+				list-style:none; 
+				padding:0 0 0 9px; margin:0 0 0 0;
+				}
+				.pet_tale_messages ul li { 
+					padding:0 0 0 25px;
+					margin:0 0 15px 0;
+					display:block;
+					background: transparent url(/site-images/tale_message_bullet.jpg) no-repeat 0 10px;
+					}
+					.pet_tale_messages ul li div.pet_tale_messsage_box {  
+						background: #f5fbff; 
+						border-radius: 6px; 
+						-moz-border-radius: 6px; 
+						-webkit-border-radius: 6px;
+						border:1px solid #b8e0fa;
+						margin:0 0 0 10px;
+						overflow:hidden;
+						position:relative;
+					}
+					
+					.pet_tale_messages ul li .pet_tale_messsage_image {
+						float:right;
+						position:relative;
+						z-index:2;
+						width:243px; 
+						background: transparent url(/site-images/candle-bg-fade.png) no-repeat 0 0;
+						text-align:right;
+						padding:15px 0 10px;
+					}
+					
+					.pet_tale_messages ul li .pet_tale_messsage_image img {
+						margin:0 20px 0 0;
+						vertical-align:middle;
+						
+					}					
+					.pet_tale_messages ul li p { 
+						margin:0; padding:25px 20px 25px 20px;
+						display:block;
+						-webkit-margin-before: 0;
+						-webkit-margin-after: 0;
+						-webkit-margin-start: 0px;
+						-webkit-margin-end: 0px;
+						line-height:22px;
+						color:#2b5383;
+						margin-bottom:31px;
+						font-size:16px;
+					}  
+					.pet_tale_messages ul li span { 
+						background:#fff; 
+						border-top:1px solid #b8e0fa; 
+						color:#2b5383; 
+						display:block;
+						position:absolute;
+						bottom:0;
+						z-index:1;
+						width:100%;
+						padding:5px 20px; 
+						font-weight:bold; 
+						-moz-border-radius: 0 0 6px 6px; 
+						-webkit-border-radius: 0 0 6px 6px;	
+						border-radius: 0 0 6px 6px;	
+						} 
+					.pet_tale_message_response { display:none; padding:30px 20px; font-weight:bold; border-bottom:1px solid #b8e0fa;}
+	
+	.pet_tale_no_media { text-align:center; color:#999; }
+	.pet_tales_gallery { width:588px; height:390px; }
+	
+	.pt_tab_subscribe_content { 
+		background:#fff; 
+		border:1px solid #b8e0fa; 
+		border-width:0 1px 0 1px; 
+		padding:0 !important;
+		}
+		.pet_tale_subscribe_form a {
+			width:75px !important;
+			text-align:center;
+		}
+		.pet_tale_subscribe { padding:20px 20px 0 20px; font-weight:bold; }
+		.pet_tale_subscribe_response { display:none; padding:30px 20px; font-weight:bold; border-bottom:1px solid #b8e0fa;}
+	
+	.pet_tale_form_field { 
+		background: #f4f4f4; /* Old browsers */
+		background: -moz-linear-gradient(top, #f4f4f4 0%, #ffffff 27%, #ffffff 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f4f4f4), color-stop(27%,#ffffff), color-stop(100%,#ffffff)); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top, #f4f4f4 0%,#ffffff 27%,#ffffff 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top, #f4f4f4 0%,#ffffff 27%,#ffffff 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top, #f4f4f4 0%,#ffffff 27%,#ffffff 100%); /* IE10+ */
+		background: linear-gradient(to bottom, #f4f4f4 0%,#ffffff 27%,#ffffff 100%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f4f4f4', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+		border:1px solid #d6d6d6; 
+		border-radius: 6px; 
+		-moz-border-radius: 6px; 
+		-webkit-border-radius: 6px;
+		color:#444;
+		font-size:14px;
+		padding:8px 5px;
+	}
+	
+	.pet_tale_form_field.error { border-color:red; }
+	.pet_tale_messages label.error { display:none; }
+	.pt_tab_content #gallery_container { height:390px; width:588px !important}
+	.pt_tab_content #gallery_container img { width:400px; }
+
+	/* PET TALES LIST PAGE  */
+	.pet_tale_featured_title { padding:0 0 10px 0; display:block; font-size:16px !important; }
+	
+	.pet_tale_search_box { 
+		background: #4c77a8; /* Old browsers */
+		background: -moz-linear-gradient(top, #4c77a8 0%, #406a99 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#4c77a8), color-stop(100%,#406a99)); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top, #4c77a8 0%,#406a99 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top, #4c77a8 0%,#406a99 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top, #4c77a8 0%,#406a99 100%); /* IE10+ */
+		background: linear-gradient(to bottom, #4c77a8 0%,#406a99 100%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c77a8', endColorstr='#406a99',GradientType=0 ); /* IE6-9 */
+		border:1px solid #2e5789;
+		-webkit-box-shadow: inset 0px 1px 0px 0px #5a8db8;
+		box-shadow: inset 0px 1px 0px 0px #5a8db8;
+		color:#fff;
+		padding:15px;
+		border-radius: 6px;
+		-moz-border-radius: 6px; 
+		-webkit-border-radius: 6px;
+	}
+	.pet_tale_search_box input { width:490px; float:left; padding:8px 5px; height:21px; line-height:37px; margin:0; display:block; }
+	.pet_tale_search_box a { display:block; float:right; padding: 0 20px; }
+	.pet_tale_search_box form { overflow:hidden; }
+	.pet_tale_filters ul { margin:0; padding:15px 0 0; overflow:hidden; list-style:none; }
+	.pet_tale_filters ul li { float: left; margin: 0 15px 0 0; }
+	.pet_tale_filters ul li label { font-weight:bold; font-size:11px; display:block; }
+	.pet_tale_loading { color:#555; }
+	
+	.pet_tale_show_more { margin:15px 0 0 0; }
+	
+	.pet_tales_list { margin:0; padding:0; lost-style:none; }
+	.pet_tales_list li { overflow:hidden; display:block; background:#f0f9ff; color:#2E5789;border-radius: 6px; -moz-border-radius: 6px; -webkit-border-radius: 6px; border:1px solid #b8e0fa; padding:15px; margin: 10px 0 0 0; }
+	.pet_tales_list li p, .pet_tales_list li h4, .pet_tales_list li a { color:#2E5789; } 
+	.pet_tales_list li a {text-decoration:none; }
+	.pet_tales_list li .pet_tale_list_photo img { border:none; width:75px; }
+	.pet_tales_list li .pet_tale_list_photo { width: 100px; float:left; height:75px; overflow:hidden; }
+	.pet_tales_list li .pet_tale_list_name { float:left; width: 250px;  }
+	.pet_tales_list li .pet_tale_list_name h4 { margin:15px 0 0 0; padding:0; font-size:16px; }
+	.pet_tales_list li .pet_tale_list_name p { margin:1px 0 0 0; font-weight:normal; }
+	.pet_tales_list li .pet_tale_list_link { display:block; line-height:35px; margin: 20px 0 0 0; padding:0 25px 0 0; float:right; background:transparent url(/site-images/tale_icons.png) no-repeat 100% 11px; }
+
+/* OLD PET TALES */
+.small_tale_box_title { color:#5779a8; font-family: 'Unkempt', cursive; font-size:20px; font-weight:700; }
+.small_tale_box_tm { color:#5779a8; }
+.small_tale_share_btn { margin: 10px 0 0 0; text-transform:uppercase; background:#fff; vertical-align: middle; display:inline-block; zoom:1; *display:inline; padding:3px; text-decoration:none; color:#5779a8; font-weight:bold; border:1px solid #5779a8; }
+.small_tale_share_btn:hover { background:#c4dcf2; }
+
+.small_pet_tale_box_image { background:#fff; border-collapse:collapse; border:2px solid #5D7B97; }
+
+#pet_tale_buttons { display:block; text-align:center; margin: 20px 0; }
+#pet_tale_buttons img { margin:0 10px; vertical-align:middle; }
+#pet_tale_buttons a { text-transform:uppercase; vertical-align: middle; display:inline-block; zoom:1; *display:inline; padding:3px; text-decoration:none; color:#5779a8; font-weight:bold; border:1px solid #5779a8; }
+#pet_tale_buttons a:hover { background:#c4dcf2; }
+h3.pet_tale_title { color:#5779a8; display:block; text-align:center; }
+
+#pet_tale_content {  }
+#pet_tale_media { margin:15px 0 0 0; }
+
+#gallery_container { height:390px; width:400px}
+#gallery_container img { width:300px; }
+
+.pet_tale_media_container { float:right; margin: 0 0 15px 15px; background:#e8f1ff; padding:15px; width:405px; border:1px solid #b5ccf2; }
+.facebook_pettale { float:left; margin: 0 15px 0 0; }
+.twitter_pettale { float:left; width:80px; overflow:hidden; }
+.googleplus_pettale { float:left; margin: 0 0 0 15px; width:78px; overflow:hidden; }
+.audio_container { display:none; }
+#audio_btn { float:right; display:block; width:78px; font-size:11px; color:#444; padding:0 3px; line-height:18px; background:#fff; text-decoration:none; border:1px solid #ccc; font-weight:normal !important; text-align:center;}
+.social_container { overflow:hidden; }
+
+.petstory { /*width: 300px;*/ width:330px; float: right;  padding:20px 0 10px 30px; }
+.petstory img { display:block; }
+.petstory_samp { width: 200px;  Font-size: 12px; background-color: #ECE6B1; text-align: left; line-height: 28px; font-weight: bold; margin-top: 0px; padding-top: 10px; padding-left: 30px; vertical-align: text-top; }
+.petstory_more  { font-size: 14px; margin: 0px; text-align: right; padding-top: 0px; padding-right: 20px; padding-bottom: 0px; padding-left: 0px; }
+.petstory_sub { color: #5D7B97; }
+
+#new_pet_tale textarea { width:435px; height:120px; }
+.formtags { font-weight:bold; color:#5D7B97; }
+.formtag_container { background: #FBE8B5; }
+.formheads_container { background:#5D7B97; }
+.pet_tale_form { border-color:#333333; background:#FFFFCC; }
+
+.forminfo { font-size:11px; }
+.formheads { font-size:16px; color:#FFC; font-weight:bold; }
+.formdesc { color:#333; font-size:12px; line-height:15px; }
+
+.pet_tales_add { color:#5779a8; border:1px solid #5779a8; background:#fff; cursor:pointer; font-weight:bold; text-transform:uppercase; padding:3px; font-size:14px; font-family:  Arial, Helvetica, sans-serif, Tahoma; }
+.pet_tales_add:hover { background:#c4dcf2; curson:pointer; }
+
+.story:hover { cursor:pointer; }
+
+
+
+/* LOCATIONS */
+.floatingpic { float: left; padding-top: 10px; padding-right: 10px; padding-bottom: 0px; padding-left: 0px; }
+.float_rightpic { float: right; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 20px; }
+.location_list { padding-left: 10px; width: 230px; height: 600px; overflow-y: auto; line-height:14px; }
+.location_name { f font-size: 12px; font-weight: bold; color: #5D7B97; vertical-align: top; }
+.location_address {  font-size: 10px; color: #000000; font-weight: normal; }
+.location_phone {  font-size: 10px; font-weight: bold; color: #000000; }
+.location_bold {  font-size: 12px; font-weight: bold; color: #000000; }
+.location_text {  font-size: 10px; color: #000000; line-height: 10px; }
+.location_container { width: 325px; line-height: 12px; text-align: left; margin: 0 auto; }
+.location_details { padding-top: 10px; padding-left: 10px; padding-right: 15px; padding-bottom: 10px; text-align: left;}
+.location_pic { width: 100px; float: right; margin: 0px; padding-top: 15px; padding-bottom: 0px; padding-left: 30px;}
+
+/* OWNER LOGIN */
+.owner_wrapper { overflow:hidden; color:#095584; }
+.owner_full { width:100%; margin: 0 0 20px; overflow:hidden; }
+.owner_left { width:425px; margin: 0 20px 0 0; float:left; }
+.owner_right { width:170px; float:left; }
+
+.owner_tabs { width:250px; float:left; background: #cce8f9 url('/site-images/owner-tab-area-bg.jpg') repeat-y 0 0; }
+.owner_top_fade { background: transparent url('/site-images/owner-side-top-fade.png') no-repeat 0 0; }
+.owner_bottom_fade { background: transparent url('/site-images/owner-side-bottom-fade.png') no-repeat 0 100%; }
+.owner_name { line-height:20px; color:#004f83; padding:60px 20px 0 50px; font-size:14px; font-weight:bold; }
+.owner_pet_status_name { font-size:25px; color:#4d84ad; }
+.owner_pet_status_message { font-size:25px; font-weight:bold; color:#085785; }
+.owner_area { background:#f0f9ff; padding:15px; border:1px solid #dceffc; border-width: 0 1px 1px 1px; }
+
+.owner_message_box {
+	background:#f0f9ff; 
+	padding:15px; 
+	border:1px solid #dceffc;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px; 
+	color:#095584; 
+	font-size:14px;
+	
+	display:block;
+}
+
+.owner_table { width:100%; }
+.owner_table tbody tr.odd { background:#f0f9ff }
+.owner_table tbody tr td { padding:15px; border:1px solid #dceffc; border-width:0 1px 1px 0; color:#095584; font-size:14px; }
+.owner_table tbody tr td.first {  border-width:0 1px 1px 1px; }
+.owner_table thead tr th { 
+	margin:0;
+	line-height:30px; 
+	text-align:left;
+	color:#fff; 
+	font-size:15px;
+	padding: 0 0 0 15px;
+	font-weight:bold;  
+	background: #01679e; /* Old browsers */
+	background: -moz-linear-gradient(top, #01679e 0%, #09507f 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#01679e), color-stop(100%,#09507f)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #01679e 0%,#09507f 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #01679e 0%,#09507f 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #01679e 0%,#09507f 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #01679e 0%,#09507f 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#01679e', endColorstr='#09507f',GradientType=0 ); /* IE6-9 */ 
+}
+
+.owner_header { 
+	display:block;  
+	margin:0;
+	line-height:30px; 
+	color:#fff; 
+	font-size:15px;
+	padding: 0 0 0 15px;
+	font-weight:bold;  
+	background: #01679e; /* Old browsers */
+	background: -moz-linear-gradient(top, #01679e 0%, #09507f 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#01679e), color-stop(100%,#09507f)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #01679e 0%,#09507f 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #01679e 0%,#09507f 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #01679e 0%,#09507f 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #01679e 0%,#09507f 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#01679e', endColorstr='#09507f',GradientType=0 ); /* IE6-9 */ 
+	}
+
+
+.owner_tabs ul { margin:0 0 0 25px; padding:15px 0 100px ; list-style:none; }
+.owner_tabs ul li { display:block; padding:0 0 5px; margin:0; }
+.owner_tabs ul li a { 
+	display:block; 
+	line-height:23px; 
+	color:#fff; 
+	padding:15px 0 15px 20px; 
+	font-size:18px; 
+	font-weight:bold; 
+	text-decoration:none; 
+	background: #01679e; /* Old browsers */
+	background: -moz-linear-gradient(top, #01679e 0%, #09507f 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#01679e), color-stop(100%,#09507f)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #01679e 0%,#09507f 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #01679e 0%,#09507f 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #01679e 0%,#09507f 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #01679e 0%,#09507f 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#01679e', endColorstr='#09507f',GradientType=0 ); /* IE6-9 */ 
+	-moz-border-radius: 7px 0 0 7px; 
+	-webkit-border-radius: 7px 0 0 7px; 
+	}
+	
+.owner_tabs ul li a:hover { 
+	background: #016195; /* Old browsers */
+	background: -moz-linear-gradient(top, #016195 0%, #094b77 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#016195), color-stop(100%,#094b77)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #016195 0%,#094b77 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #016195 0%,#094b77 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #016195 0%,#094b77 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #016195 0%,#094b77 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#016195', endColorstr='#094b77',GradientType=0 ); /* IE6-9 */
+	}
+	
+.owner_tabs ul li a:active { 
+	background: #094b77; /* Old browsers */
+	background: -moz-linear-gradient(top, #094b77 0%, #016195 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#094b77), color-stop(100%,#016195)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #094b77 0%,#016195 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #094b77 0%,#016195 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #094b77 0%,#016195 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #094b77 0%,#016195 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#094b77', endColorstr='#016195',GradientType=0 ); /* IE6-9 */
+	}
+	
+.owner_tabs ul li.active { background: transparent url('/site-images/owner-tab-side-on.png') no-repeat 0 0; }
+.owner_tabs ul li.active a { background: #fff; color:#005a84; }
+
+.owner_content {  }
+.owner_login_wrapper { width:350px; margin:0 auto; overflow:hidden; }
+.owner_login_wrapper .page-title { height:85px; background:#fff url(/site-images/title-decoration.jpg) no-repeat 0 40px; }
+.owner_has_tabs { margin: 0 0 0 30px; float:left; width:630px; }
+.owner_no_tabs { width:100%; }
+
+.owner_form fieldset { border:0; padding:0; margin:0 0 25px; }
+.owner_form h3 {  
+	display:block;  
+	margin:0;
+	text-indent: 0;
+	line-height:30px; 
+	color:#fff; 
+	font-size:15px;
+	padding: 0 0 0 15px;
+	font-weight:bold;  
+	background: #01679e; /* Old browsers */
+	background: -moz-linear-gradient(top, #01679e 0%, #09507f 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#01679e), color-stop(100%,#09507f)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #01679e 0%,#09507f 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #01679e 0%,#09507f 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #01679e 0%,#09507f 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #01679e 0%,#09507f 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#01679e', endColorstr='#09507f',GradientType=0 ); 
+}
+
+.owner_form ol { margin: 0; border:1px solid #dceffc; border-width: 0 1px 1px 1px; padding:15px; list-style:none; } 
+.owner_form ol li { overflow:hidden;  padding:8px 5px; }
+.owner_form ol li span { display:block;padding:6px 0 0 0; }
+.owner_form ol label { display:block; width:100px; float:left; padding:8px 10px 0 0; text-align:right;  }
+.owner_form ol label.error { float:none !important; }
+.owner_form .owner_form_helper span { 
+	background:#f0f9ff; 
+	padding:15px; 
+	border:1px solid #dceffc;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px; 
+	color:#095584; 
+	font-size:14px;
+	display:block;
+	} 
+	
+.owner_login_wrapper .owner_form .owner_form_helper span { 
+	font-size:13px;
+	} 
+	
+
+
+.owner_form .input { padding:3px 0; }
+.owner_form input { 
+	padding:5px; 
+	width:250px;
+	border:1px solid #c6e5f1; 
+	border: 1px solid #CCC;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+	-moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+	-webkit-transition: border linear 0.2s, box-shadow linear 0.2s;
+	-moz-transition: border linear 0.2s, box-shadow linear 0.2s;
+	-o-transition: border linear 0.2s, box-shadow linear 0.2s;
+	transition: border linear 0.2s, box-shadow linear 0.2s;
+	vertical-align: middle;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+ }
+ 
+.owner_form .input_small { width:100px !important;  }
+
+ .owner_login_wrapper .owner_form input { 
+	width:300px;
+}
+ 
+ .owner_remove_width { width:auto !important; }
+ 
+ .owner_form input.owner_file_input {
+ 	border:none !important;
+ 	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+ }
+ 
+ .owner_form textarea { 
+	padding:5px; 
+	width:400px;
+	height:200px;
+	border:1px solid #c6e5f1; 
+	border: 1px solid #CCC;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+	-moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+	-webkit-transition: border linear 0.2s, box-shadow linear 0.2s;
+	-moz-transition: border linear 0.2s, box-shadow linear 0.2s;
+	-o-transition: border linear 0.2s, box-shadow linear 0.2s;
+	transition: border linear 0.2s, box-shadow linear 0.2s;
+	vertical-align: middle;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+ }
+
+.owner_form label { color:#004f83; font-size:12px; font-weight:bold; }
+
+
+.owner_button {
+	color: white;
+	font-weight:bold; 
+	font-size:14px;
+	line-height:20px;
+	width:auto !important;
+	text-decoration:none;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+	background-color: #09507f;
+	background-image: -moz-linear-gradient(top, #01679e, #09507f);
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#01679e), to(#09507f));
+	background-image: -webkit-linear-gradient(top, #01679e, #09507f);
+	background-image: -o-linear-gradient(top, #01679e, #09507f);
+	background-image: linear-gradient(to bottom, #01679e, #09507f);
+	background-repeat: repeat-x;
+	border:none !important;
+	border-color:#fff !important;
+	display:inline-block; *display:inline; zoom:1;
+	padding: 4px 8px !important;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	margin:0 0 7px; 
+	}
+
+.owner_button:hover {
+	cursor:pointer;
+	background-color: #09507F;
+	background-image: -moz-linear-gradient(top, #016195, #094b77);
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#016195), to(#094b77));
+	background-image: -webkit-linear-gradient(top, #016195, #094b77);
+	background-image: -o-linear-gradient(top, #016195, #094b77);
+	background-image: linear-gradient(to bottom, #016195, #094b77);
+	background-repeat: repeat-x;
+}
+
+.owner_button:active {
+	cursor:pointer;
+	background-color: #016195;
+	background-image: -moz-linear-gradient(top, #094b77, #016195);
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#094b77), to(#016195));
+	background-image: -webkit-linear-gradient(top, #094b77, #016195);
+	background-image: -o-linear-gradient(top, #094b77, #016195);
+	background-image: linear-gradient(to bottom, #094b77, #016195);
+	background-repeat: repeat-x;
+}
+
+.owner_add span { background: transparent url(/site-images/plus_icon.png) no-repeat 0 50%; display:block; padding: 0 3px 0 23px; }
+.owner_print span { background: transparent url(/site-images/print_icon.png) no-repeat 0 50%; display:block; padding: 0 3px 0 23px; }
+.owner_payment span { background: transparent url(/site-images/owner-payment-icon.png) no-repeat 0 50%; display:block; padding: 0 3px 0 20px; }
+
+.owner_pet_list { margin:20px 0; padding:0; }
+.owner_pet_list li { display:block; margin: 0 0 5px; }
+.owner_pet_list li .owner_pet_list_title { width:210px; display:block; float:left; }
+.owner_pet_list li .owner_pet_list_sub { width:295px; font-weight:normal !important; display:block; float:left; }
+
+.owner_pet_list li a { 
+	color:#fff; 
+	text-decoration:none; 
+	display:block; 
+	line-height:40px;
+	padding:0 0 0 20px;
+	overflow:hidden;
+	
+	background: #01679e url('/site-images/chevron.png') no-repeat 95% 50%; 
+	background-repeat: no-repeat;
+	background-position: 95% 50%;
+	background-image:url('/site-images/chevron.png'), -moz-linear-gradient(top, #01679e 0%, #09507f 100%); /* FF3.6+ */
+	background-image:url('/site-images/chevron.png'), -webkit-gradient(linear, left top, left bottom, color-stop(0%,#01679e), color-stop(100%,#09507f)); /* Chrome,Safari4+ */
+	background-image:url('/site-images/chevron.png'), -webkit-linear-gradient(top, #01679e 0%,#09507f 100%); /* Chrome10+,Safari5.1+ */
+	background-image:url('/site-images/chevron.png'), -o-linear-gradient(top, #01679e 0%,#09507f 100%); /* Opera 11.10+ */
+	background-image:url('/site-images/chevron.png'), -ms-linear-gradient(top, #01679e 0%,#09507f 100%); /* IE10+ */
+	background-image:url('/site-images/chevron.png'), linear-gradient(to bottom, #01679e 0%,#09507f 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#01679e', endColorstr='#09507f',GradientType=0 ); /* IE6-9 */ 
+	-moz-border-radius: 7px 7px 7px 7px; 
+	-webkit-border-radius: 7px 7px 7px 7px; 
+	}
+	
+.owner_pet_list li a:hover { 
+	background: #016195 url('/site-images/chevron.png') no-repeat 95% 50%; /* Old browsers */
+	background-image:url('/site-images/chevron.png'), -moz-linear-gradient(top, #016195 0%, #094b77 100%); /* FF3.6+ */
+	background-image:url('/site-images/chevron.png'), -webkit-gradient(linear, left top, left bottom, color-stop(0%,#016195), color-stop(100%,#094b77)); /* Chrome,Safari4+ */
+	background-image:url('/site-images/chevron.png'), -webkit-linear-gradient(top, #016195 0%,#094b77 100%); /* Chrome10+,Safari5.1+ */
+	background-image:url('/site-images/chevron.png'), -o-linear-gradient(top, #016195 0%,#094b77 100%); /* Opera 11.10+ */
+	background-image:url('/site-images/chevron.png'), -ms-linear-gradient(top, #016195 0%,#094b77 100%); /* IE10+ */
+	background-image:url('/site-images/chevron.png'), linear-gradient(to bottom, #016195 0%,#094b77 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#016195', endColorstr='#094b77',GradientType=0 ); /* IE6-9 */
+	}
+
+.owner_pet_list li a:active { 
+	background: #094b77 url('/site-images/chevron.png') no-repeat 95% 50%; /* Old browsers */
+	background-image:url('/site-images/chevron.png'), -moz-linear-gradient(top, #094b77 0%, #016195 100%); /* FF3.6+ */
+	background-image:url('/site-images/chevron.png'), -webkit-gradient(linear, left top, left bottom, color-stop(0%,#094b77), color-stop(100%,#016195)); /* Chrome,Safari4+ */
+	background-image:url('/site-images/chevron.png'), -webkit-linear-gradient(top, #094b77 0%,#016195 100%); /* Chrome10+,Safari5.1+ */
+	background-image:url('/site-images/chevron.png'), -o-linear-gradient(top, #094b77 0%,#016195 100%); /* Opera 11.10+ */
+	background-image:url('/site-images/chevron.png'), -ms-linear-gradient(top, #094b77 0%,#016195 100%); /* IE10+ */
+	background-image:url('/site-images/chevron.png'), linear-gradient(to bottom, #094b77 0%,#016195 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#094b77', endColorstr='#016195',GradientType=0 ); /* IE6-9 */
+	}
+
+.owner_subscribe_model_overlay {
+	display: none;
+	background: transparent url(/images/white-overlay.png) repeat 0 0;
+	position:fixed;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	z-index:100;
+	}
+
+.owner_subscribe_model {
+	background:#fff;
+	width:735px;
+	height:600px;
+	left:50%;
+	margin-left:-367px;
+	top:50%;
+	margin-top:-310px;
+	position:fixed;
+	-webkit-box-shadow: 0px 0px 50px 0px rgba(50, 50, 50, 0.35);
+	-moz-box-shadow:    0px 0px 50px 0px rgba(50, 50, 50, 0.35);
+	box-shadow:         0px 0px 50px 0px rgba(50, 50, 50, 0.35);
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	text-align:center;
+	}
+
+.owner_subscribe_model h1 {
+	margin:30px 0 0;
+	padding:0;
+	}
+
+.owner_subscribe_model p {
+	margin:5px 0 40px;
+	font-size:16px;
+	}
+
+.owner_subscribe_model a {
+	display:inline-block;
+	*display:inline;
+	zoom:1;
+	line-height:50px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	width:250px;
+	text-align:center;
+	color:#fff;
+	font-weight:bold;
+	text-decoration:none;
+	font-size:18px;
+}
+.owner_subscribe_model a.owner_subscribe_model_subscribe_btn {
+	background:#095584;
+	margin: 25px 15px 0 0;
+}
+.owner_subscribe_model a.owner_subscribe_model_subscribe_btn:hover {
+	background:#0063A0;
+}
+.owner_subscribe_model a.owner_subscribe_model_cancel_btn {
+	background:#868686;
+	margin: 25px 0 0 0;
+}
+.owner_subscribe_model a.owner_subscribe_model_cancel_btn:hover {
+	background:#aaa;
+}
+
+.owner_subscribe_help_text { 
+	color:#999;
+	display: block;
+	padding:10px 0 ;
+	text-align: center;
+	font-size:11px;
+}
+
+
+
+
+
+.invoice-list table { border-collapse:collapse; width:100%;  }
+.invoice-list th, .invoice-list td { padding:5px; }
+.invoice-list td.invoice-item-price { text-align:right;  }
+.invoice-list th { text-align:left; background: #f3f3f3; }
+.invoice-list td { border-bottom:1px solid #ddd;  }
+.invoice-list td.invoice-totals { border:none; text-align:right;  }
+
+
+/* FOOTER  */
+#footer { background:#164E82; padding:20px; color:#d4e7fa; font-size:12px; text-align:center; }
+#footer a { color:#d4e7fa; font-size:12px; font-weight:normal; }
+
+/* FORM */
+input { font-size:14px;  }
+
+.form { overflow:hidden; }
+.form div { padding:7px 0; overflow:hidden; }
+.form div label { display:block; float:left; padding:0 4px 0 0; width:70px; }
+
+#login-form { padding:10px; background:#d8ecff; border: 1px solid #aaceef;  }
+label { display:block; }
+input.error, textarea.error { border:1px solid red; }
+label.error { color:red; font-size:11px; font-weight:bold; display:none; }

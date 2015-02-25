@@ -1,0 +1,159 @@
+<script type="text/javascript" src="/js/json2.js"></script>
+<script type="text/javascript" src="/js/jquery.blockui.js"></script>
+<script type="text/javascript" src="/js/date.format.js"></script>
+<script>
+	
+	//default filter valiues
+	var sort = 'date';
+	var taleLocation = 'site';
+	var keyword = '';	
+
+	function genPetTaleListItem(name,birthDate,passDate,id,photo) {
+		var item = "<li><a href='/pet-tales/"+id+"' title='View Pet Tale'>";
+		item += "<div class='pet_tale_list_photo'><img src='"+photo+"' alt='' /></div>";
+		item += "<div class='pet_tale_list_name'><h4>"+name+"</h4><p>"+birthDate+" &#8211; "+passDate+"</p></div>";
+		item += "<a class='pet_tale_list_link' href='/pet-tales/"+id+"' title='View Pet Tale'>View Pet Tale</a>";
+		item += "</a></li>";
+
+		return item;
+	}
+
+	function showLoader(){
+		var item = "<li>";
+		item += "<p><strong>Loading...</strong></p>";
+		item += "</li>";
+		jQuery("#pet_tales_list").html(item);
+	}
+
+	function getPetTales(sort,taleLocation,keyword) {
+
+		showLoader();
+		
+		jQuery.ajax({
+		  type: "POST",
+		  url: "/pet-tales/ajax_get_tales",
+		  data: { sort:  sort, taleLocation: taleLocation, keyword: keyword }
+		}).done(function( json ) {
+			var tales = JSON.parse(json);
+			var petTalesList = "";
+			if(tales.length>0) {
+				for (var key in tales) {
+					var t = tales[key];
+					if(t['story_pet_passdate']!='0000-00-00') {
+						var talePassDateArray = t['story_pet_passdate'].split("-");
+						var talePassDateString = new Date(talePassDateArray[0], talePassDateArray[1], talePassDateArray[2], 0, 0, 0, 0);
+						var talePassDate = dateFormat(talePassDateString, "mmm d, yyyy");
+					}else{
+						talePassDate = 'Unknown';
+					}
+	
+					if(t['story_pet_birthday']!='0000-00-00') {
+						var taleBirthDateArray = t['story_pet_birthday'].split("-");
+						var taleBirthDateString = new Date(taleBirthDateArray[0], taleBirthDateArray[1], taleBirthDateArray[2], 0, 0, 0, 0);
+						var taleBirthDate = dateFormat(taleBirthDateString, "mmm d, yyyy");
+					}else{
+						taleBirthDate = 'Unknown';
+					}
+					
+					if(t['media_file']){
+						var taleImage = "<?php echo "/".$this->config->item('mediaBaseFolder')."/".$this->config->item('storyBaseFolder')."/" ?>"+t['story_id']+"/"+t['media_file'];
+					}else{
+						var taleImage = "<?php echo $this->config->item('defaultStoryImage');?>";
+					}
+					taleImage = taleImage.toLowerCase();
+					
+	
+					
+					petTalesList += genPetTaleListItem(t['story_pet_name'],taleBirthDate,talePassDate,t['story_id'],taleImage);
+				}
+			}else{
+				var item = "<li>";
+				item += "<p><strong>No Pet Tales were found.</strong></p>";
+				item += "</li>";
+				petTalesList +=item;
+			}
+			
+			jQuery("#pet_tales_list").html(petTalesList);
+		});
+	}
+
+    jQuery(document).ready(function() {
+    	jQuery( "#pet_tale_tabs" ).ctabs();
+
+		jQuery("#pet_tale_sort").change(function(){
+			sort = jQuery(this).val();
+			getPetTales(sort,taleLocation,keyword);
+		});
+
+		jQuery("#pet_tale_location_select").change(function(){
+			taleLocation = jQuery(this).val();
+			getPetTales(sort,taleLocation,keyword);
+		});
+
+		jQuery("#pet_tale_keyword").keyup(function(){
+			keyword = jQuery(this).val();
+			getPetTales(sort,taleLocation,keyword);
+		});
+
+		jQuery("#pet_tale_search_button").click(function(){
+			keyword = jQuery("#pet_tale_keyword").val();
+			getPetTales(sort,taleLocation,keyword);
+		});
+    	
+    	//load pet tales list
+		getPetTales(sort,taleLocation,keyword);
+    });
+</script>
+<?php 
+	if(strlen($featuredTale['story_pet_name']) > 10)
+		$petNameButton = substr($featuredTale['story_pet_name'],0,6)."...";
+	else
+		$petNameButton = $featuredTale['story_pet_name'];
+?>
+
+<div id='fb-root'></div>
+<script src='http://connect.facebook.net/en_US/all.js'></script>
+
+<div class="pet_tale_container">
+	<div class="pet_tale_left_column">
+		<h3 class="pet_tale_featured_title">Featured Pet Tale</h3>
+		<a class="pet_tale_image" href="#photos-and-videos" name="View more photos & videos"><img src="<?php echo $featuredTale['story_image'];?>" /></a>
+		<h3><?php echo $featuredTale['story_pet_name']; ?></h3>
+		<div class="pet_tale_left_buttons">
+			<a class="pet_tale_button pet_tale_search pet_tale_button_light" href="/pet-tales/<?php echo $featuredTale['story_id'];?>" title="Search Pet Tales"><span>View <?php echo $petNameButton?>'s Tale</span></a>
+			<a class="pet_tale_button pet_tale_paw pet_tale_button_dark" href="/pet-tales/add" title="Create a Pet Tale"><span>Create a Pet Tale</span></a>
+		</div>
+	</div>	
+	<div class="pet_tale_right_column">
+		<h2 class="page-title">In Memory</h2>
+		<?php echo $page_info['content']; ?>
+		<div class="pet_tale_search_box">
+			<form name="pet_tale_search_form" id="pet_tale_search_form" method="post" action="">
+       			<input class="pet_tale_form_field required" type="text" name="pet_tale_keyword" id="pet_tale_keyword" placeholder="Search" />
+       			<a href="javascript:void(0)" id="pet_tale_search_button" class="pet_tale_button pet_tale_button_light">Search</a>
+       		</form>
+       		<div class="pet_tale_filters">
+       			<ul>
+       				<li>
+       					<label for="pet_tale_sort">Sort By</label>
+		       			<select name="pet_tale_sort" id="pet_tale_sort" class="pet_tale_sort">
+		       				<option value="date" selected="selected">Passage Date</option>
+		       				<option value="name">Pet Name</option>
+		       			</select>
+		       		</li>
+		       		<li>
+		       			<label for="pet_tale_location">Location</label>
+		       			<select name="pet_tale_location_select" class="pet_tale_location_select" id="pet_tale_location_select">
+		       				<?php foreach($locations as $l) {?>
+		       					<?php echo "<option value='{$l['site_id']}'>{$l['name']}</option>"?>
+		       				<?php } ?>
+		       			</select>
+		       		</li>
+		       	</ul>
+       		</div>
+       	</div>
+       	<div class="pet_tale_list_container">
+   			<ul id="pet_tales_list" class="pet_tales_list"><li><p><strong>Loading...</strong></p></li></ul>
+   		</div>
+	</div>
+</div>

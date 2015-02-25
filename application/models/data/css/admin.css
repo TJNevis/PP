@@ -1,0 +1,36 @@
+.success, .error { padding:5px; margin:0 0 15px; }
+
+.admin_form {  }
+.admin_form fieldset { padding:15px; border:1px solid #ddd; margin:0 0 20px 0; }
+.admin_form fieldset legend { font-size:11px; font-weight:bold; color:#256AA5;  }
+.admin_form  ol { list-style:none; padding:0; margin:0; }
+.admin_form  li { overflow:hidden; display:block; padding:10px;  border-bottom:1px solid #eee; }
+.admin_form  li label { display:block; float:left; color:#444; text-align:right; margin:0 20px 0 0; width:150px; }
+.admin_form  li label.error { float:none !important; display:inline; padding:0 0 0 5px; color:red; }
+.admin_form  li input { width: 300px; padding:3px;  }
+.admin_form  li textarea { width: 500px; height:250px; padding:3px;  }
+.admin_form .btn { display:block; margin:0 7px 0 0; background-color:#f5f5f5; border:1px solid #ddd; border-top:1px solid #eee; border-left:1px solid #eee; font-family:"Lucida Grande", Tahoma, Arial, Verdana, sans-serif; font-size:12px; line-height:130%; text-decoration:none; font-weight:bold; color:#336699; cursor:pointer; padding:5px 10px 6px 7px; /* Links */}
+.admin_form .btn:hover { background-color:#dff4ff; border:1px solid #c2e1ef; }
+.admin_form .btn:active { background-color:#6299c5; border:1px solid #6299c5; color:#fff; }
+
+.banner_item_checkbox { display:none; }
+
+
+/* Site Editor */
+#licensee_logo { display:none; }
+#custom_banner { display:none; }
+#custom_text { display:none; }
+#banner_chooser { display:none; }
+
+.template_label { height:200px; }
+.template_preview { margin:0 5px 5px 0; border:5px solid #fff; display:inline-block; *display:inline; zoom:1; }
+.template_preview:hover, .template_preview_selected:hover { border:5px solid #b4cce2;  }
+.template_preview_selected { margin:0 5px 5px 0; border:5px solid #164e82; display:inline-block; *display:inline; zoom:1;  }
+
+.banner_list { clear:both; margin:0 0 0 170px; }
+.banner_preview { margin:0 5px 5px 0; border:5px solid #fff; display:inline-block; *display:inline; zoom:1; }
+.banner_preview:hover, .banner_preview_selected:hover { border:5px solid #b4cce2;  }
+.banner_preview_selected { margin:0 5px 5px 0; border:5px solid #164e82; display:inline-block; *display:inline; zoom:1;  }
+
+.home-btn { width:200px; }
+

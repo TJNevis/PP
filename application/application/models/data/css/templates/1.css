@@ -1,0 +1,49 @@
+body { background:#d4e7fa; }
+h2 { color:#5779a8; } 
+a { color:#696; }
+
+/* HEADER  */
+#top { background:#256AA5; }
+
+#nav {  background:#62861d url(/images/templates/1/nav-bg.jpg) repeat-x 0 0; }
+#nav li { background: transparent url(/images/templates/1/nav-separator.jpg) no-repeat 100% 0; }
+#nav li a:hover { background:#62861d; }
+
+/* CONTENT  */
+h2.page-title { background:#fff url(/images/templates/1/title-decoration.jpg) no-repeat 0 30px; }
+.pawprint { width:36px; height:29px; background:#fff url(/images/templates/1/pawprint.jpg) no-repeat 0 0; display:inline-block; zoom:1; *display:inline; vertical-align:middle; }
+
+/* PET TALES */
+.small_tale_box_title { color:#5779a8; font-family: 'Unkempt', cursive; font-size:30px; font-weight:700; }
+.small_tale_box_tm { color:#5779a8; }
+.small_tale_share_btn { color:#5779a8; border:1px solid #5779a8; }
+.small_tale_share_btn:hover { background:#c4dcf2; }
+
+.small_pet_tale_box_image { background:#fff; border-collapse:collapse; border:2px solid #5D7B97; }
+
+.pet_tales_add { color:#5779a8; border:1px solid #5779a8; }
+.pet_tales_add:hover { background:#c4dcf2; }
+
+#pet_tale_buttons a { color:#5779a8; border:1px solid #5779a8; }
+#pet_tale_buttons a:hover { background:#c4dcf2; }
+h3.pet_tale_title { color:#5779a8; }
+
+.pet_tale_media_container { background:#e8f1ff; border:1px solid #b5ccf2; }
+
+.formtags { color:#5D7B97; }
+.formtag_container { background: #FBE8B5; }
+.formheads_container { background:#5D7B97; }
+.pet_tale_form { border-color:#333333; background:#FFFFCC; }
+.formheads { color:#FFC; }
+
+tr.odd { background-color: #e2eeff; }
+tr.even { background-color: white; }
+tr.even td.sorting_1 { background-color: #e7efff; }
+tr.odd td.sorting_1 { background-color: #d3e5ff; }
+
+/* LOCATIONS */
+.location_name { color: #5D7B97; }
+
+/* FOOTER  */
+#footer { background:#164E82; color:#d4e7fa; }
+#footer a { color:#d4e7fa; }
